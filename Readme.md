@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Евгений Ли](https://up.htmlacademy.ru/adaptive/17/user/908421).
-* Наставник: [Сергей Зубов].
+* Наставник: [Сергей Зубов](https://htmlacademy.ru/profile/serj).
 
 ---
 
