@@ -1,0 +1,42 @@
+.social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 27px;
+  height: 27px;
+
+  font-size: 0;
+
+  &:hover {
+    & .social-button__image {
+      fill: #68b738;
+    }
+  }
+
+  &:active {
+    & .social-button__image {
+      fill: rgba(104, 183, 56, 0.3);
+    }
+  }
+}
+
+.social-button__image {
+  fill: #444444;
+
+  &--vkontakte {
+    width: 22px;
+    height: 12px;
+  }
+
+  &--instagram {
+    width: 16.1px;
+    height: 16px;
+  }
+
+  &--fb {
+    width: 10px;
+    height: 19px;
+  }
+
+}
