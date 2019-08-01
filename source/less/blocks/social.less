@@ -18,3 +18,25 @@
     margin-right: 25px;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .social__list {
+    padding: 0 0 0 26px;
+  }
+
+  .social__item {
+    &:nth-child(1) {
+      margin-right: 22px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 16px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social__list {
+    padding: 0 0 0 28px;
+  }
+}

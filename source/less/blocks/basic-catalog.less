@@ -18,3 +18,32 @@
   margin: 0;
   padding: 0;
 }
+
+@media (min-width: @tablet-width) {
+  .basic-catalog__list {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    box-sizing: border-box;
+    padding: 25px 30px 0 30px;
+  }
+
+  .basic-catalog__item {
+    margin: 140px 0 0 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .basic-catalog {
+    padding: 0 110px 0 110px;
+  }
+
+  .basic-catalog__list {
+    padding: 42.5px 0 0 0;
+  }
+
+  .basic-catalog__item {
+    margin: 122px 0 20px 0;
+  }
+}
