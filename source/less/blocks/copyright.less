@@ -3,6 +3,9 @@
   flex-direction: row;
   justify-content: space-between;
 
+  margin: 0;
+  padding: 22px 0 22px 0;
+
   text-decoration: none;
 
   &:hover {
@@ -42,4 +45,20 @@
   padding: 0;
 
   fill: #666666;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__link {
+    padding: 0;
+  }
+
+  .copyright__name {
+    margin-right: 25px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright__link {
+    padding-top: 2px;
+  }
 }
