@@ -21,3 +21,22 @@
 .expenses__number {
   margin: 0 auto 0 0;
 }
+
+@media (min-width: @tablet-width) {
+  .expenses {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .expenses__title,
+  .expenses__number {
+    margin: 0;
+
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .expenses__title {
+    margin-bottom: 10px;
+  }
+}
