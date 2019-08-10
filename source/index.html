@@ -66,6 +66,11 @@
             <h2 class="program-select__title">Функциональное питание для котов</h2>
             <p class="program-select__slogan">Занялся собой? Займись котом!</p>
             <picture class="program-select__picture">
+
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
+
               <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
               <img class="program-select__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@1x.png 1x, img/index-can-mobile@2x.png 2x" width="280" height="271" alt="Профессиональный уход за котами и кошками">
@@ -156,6 +161,11 @@
               <div class="slider__container">
                 <div class="slider__wrapper slider__wrapper--before">
                   <picture>
+
+                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+
                     <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
                     <img class="slider__image slider__image--before " src="img/before-mobile@1x.png" srcset="img/before-mobile@1x.png 1x, img/before-mobile@2x.png 2x" width="320" height="240" alt="Фото до программы похудения">
@@ -163,9 +173,15 @@
                 </div>
                 <div class="slider__wrapper slider__wrapper--after">
                   <picture>
+
+                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+
+
                     <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-                    <img class="slider__image slider__image--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@1x.pn 1x, img/after-mobile@2x.png 2x" width="320" height="240" alt="Фото после программы похудения">
+                    <img class="slider__image slider__image--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@1x.png 1x, img/after-mobile@2x.png 2x" width="320" height="240" alt="Фото после программы похудения">
                   </picture>
                 </div>
               </div>
@@ -196,6 +212,10 @@
               <div class="location__static-torn">
                 <div class="location__static-wrapper aligment-wrapper">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+
                     <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
                     <img class="location__static-map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@1x.png 1x, img/bg-map-mobile@2x.png 2x" width="320" height="400" alt="Наш адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
@@ -219,7 +239,7 @@
             <ul class="social__list">
               <li class="social__item">
                 <a class="social__button social-button" href="https://vk.com/htmlacademy">
-                  <svg class="social-button__image social-button__image--vkontakte" width="22" height="12">
+                  <svg aria-hidden="true" role="presentation" class="social-button__image social-button__image--vkontakte" width="22" height="12">
                     <use xlink:href="#shapes__vk"></use>
                   </svg>
                   Мы в Вконтакте
@@ -227,7 +247,7 @@
               </li>
               <li class="social__item">
                 <a class="social__button social-button" href="https://www.instagram.com/htmlacademy">
-                  <svg class="social-button__image social-button__image--instagram" x="0px" y="0px" width="16.1" height="16">
+                  <svg aria-hidden="true" role="presentation" class="social-button__image social-button__image--instagram" x="0px" y="0px" width="16.1" height="16">
                     <use xlink:href="#shapes__instagram"></use>
                   </svg>
                   Мы в Инстаграм
@@ -235,7 +255,7 @@
               </li>
               <li class="social__item">
                 <a class="social__button social-button" href="https://www.facebook.com/htmlacademy">
-                  <svg class="social-button__image social-button__image--fb" x="0px" y="0px" width="10" height="19">
+                  <svg aria-hidden="true" role="presentation" class="social-button__image social-button__image--fb" x="0px" y="0px" width="10" height="19">
                     <use xlink:href="#shapes__fb"></use>
                   </svg>
                   Мы в Фейсбук
@@ -246,7 +266,8 @@
           <div class="page-footer__copyright copyright">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <span class="copyright__name">HTML Academy</span>
-              <svg class="copyright__image" width="26.943" height="34.09">
+              <svg role="img" aria-labelledby="copyright__title" class="copyright__image" width="26.943" height="34.09">
+                <title id="copyright__title">Иконка курсов HTMLAcademy</title>
                 <use xlink:href="#shapes__htmlacademy"></use>
               </svg>
             </a>
