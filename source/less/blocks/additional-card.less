@@ -1,0 +1,142 @@
+.additional-card {
+  display: flex;
+  flex-direction: column;
+
+  padding: 14px 0 17px 0;
+}
+
+.additional-card__data {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 0 13px 0;
+}
+
+.additional-card__characteristics {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.additional-card__title {
+  margin: 0 0 10px 0;
+  padding: 0 0 0 3px;
+
+  font-size: 16px;
+  line-height: 1;
+  font-weight: normal;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.additional-card__unit,
+.additional-card__cost {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: normal;
+  color: #444444;
+}
+
+.additional-card__cost {
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.additional-card__button {
+  margin: 0 3px 0 1px;
+  box-sizing: border-box;
+  padding: 10px 0 10px 3px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: normal;
+}
+
+@media (min-width: @tablet-width) {
+  .additional-card {
+    padding: 25px 33px 27px 36px;
+  }
+
+  .additional-card__data {
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: 0 0 16px 0;
+  }
+
+  .additional-card__characteristics {
+    width: 300px;
+    box-sizing: border-box;
+    padding: 4px 0 0 0;
+  }
+
+  .additional-card__title {
+    font-size: 20px;
+  }
+
+  .additional-card__unit,
+  .additional-card__cost {
+    font-size: 16px;
+  }
+
+  .additional-card__unit {
+    text-align: right;
+  }
+
+  .additional-card__cost {
+    width: 92px;
+  }
+
+  .additional-card__button {
+    padding: 10px 0 10px 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional-card {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0 16px 0;
+  }
+
+  .additional-card__data {
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+
+    margin: 0;
+  }
+
+  .additional-card__title {
+    margin: 0 auto 0 0;
+  }
+
+  .additional-card__button {
+    width: 244px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 3px;
+    margin-left: 36px;
+
+    line-height: 20px;
+  }
+
+  .additional-card__characteristics {
+    width: 290px;
+    padding: 7px 0 0 0;
+  }
+
+  .additional-card__unit {
+    width: auto;
+    text-align: left;
+  }
+
+  .additional-card__cost {
+    width: 44px;
+    text-align: left;
+  }
+}

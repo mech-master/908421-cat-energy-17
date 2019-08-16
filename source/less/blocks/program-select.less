@@ -7,6 +7,12 @@
   padding: 27px 0 0 0;
 
   background-image: url("../img/index-background-mobile@1x.jpg");
+
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
+
   background-color: transparent;
   background-size: 320px 305px;
   background-position: center top;
@@ -44,11 +50,6 @@
   padding: 0;
   width: 280px;
   height: 271px;
-
-  &--tablet,
-  &--desktop {
-    display: none;
-  }
 }
 
 .program-select__button {
@@ -88,22 +89,19 @@
     text-align: left;
   }
 
-  .program-select__image {
+  .program-select__picture {
     order: 4;
 
     margin: -80px auto 0 auto;
+  }
+
+  .program-select__image {
+    display: block;
+
+    margin: 0;
 
     width: 709px;
     height: 609px;
-
-    &--mobile,
-    &--desktop {
-      display: none;
-    }
-
-    &--tablet {
-      display: block;
-    }
   }
 
   .program-select__button {
@@ -137,28 +135,18 @@
     margin: 0 0 53px 0;
   }
 
-  .program-select__image {
+  .program-select__picture {
     order: 4;
     position: absolute;
     top: 108px;
     left: 490px;
 
     margin: -80px auto 0 auto;
+  }
 
-    width: 709px;
-    height: 609px;
-
-    &--mobile,
-    &--tablet {
-      display: none;
-    }
-
-    &--desktop {
-      display: block;
-
-      width: 552px;
-      height: 499px;
-    }
+  .program-select__image {
+    width: 552px;
+    height: 499px;
   }
 
   .program-select__button {
