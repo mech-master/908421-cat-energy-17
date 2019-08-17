@@ -66,41 +66,41 @@
           <form class="select-plan__form" action="https://echo.htmlacademy.ru" method="POST">
             <p class="select-plan__hint">Заполните анкету и мы подберем программу питания для вашего кота</p>
             <div class="select-plan__initial-data initial-data">
-              <fieldset class="initial-data__pet-detail pet-detail">
-                <legend class="visually-hidden">Данные питомца</legend>
+              <div class="initial-data__pet-detail pet-detail">
+                <h3 class="visually-hidden">Данные питомца</h3>
                 <ul class="pet-detail__list ">
-                  <li class="pet-detail__item pet-name">
-                    <label class="row-label pet-name__label" for="pet-name_input">Имя:*</label>
-                    <input class="input-text pet-name__input" type="text" name="pet-name" id="pet-name_input" required>
+                  <li class="pet-detail__item">
+                    <label class="row-label pet-detail__label" for="pet-name_input">Имя:*</label>
+                    <input class="input-text pet-detail__input" type="text" name="pet-name" id="pet-name_input" required>
                   </li>
-                  <li class="pet-detail__item pet-weight">
-                    <label class="row-label pet-weight__label" for="pet-weight_input">Вес (кг):*</label>
-                    <input class="input-text pet-weight__input" type="text" name="pet-weight" id="pet-weight_input" required>
+                  <li class="pet-detail__item">
+                    <label class="row-label pet-detail__label" for="pet-detail_input">Вес (кг):*</label>
+                    <input class="input-text pet-detail__input" type="text" name="pet-weight" id="pet-weight_input" required>
                   </li>
-                  <li class="pet-detail__item pet-age">
-                    <label class="row-label pet-age__label" for="pet-age_input">Возраст (лет):</label>
-                    <input class="input-text pet-age__input" type="text" name="pet-age" id="pet-age_input">
+                  <li class="pet-detail__item">
+                    <label class="row-label pet-detail__label" for="pet-age_input">Возраст (лет):</label>
+                    <input class="input-text pet-detail__input" type="text" name="pet-age" id="pet-age_input">
                   </li>
                 </ul>
-              </fieldset>
+              </div>
 
-              <fieldset class="initial-data__plan-direction plan-direction">
-                <legend class="visually-hidden">Направление программы</legend>
+              <div class="initial-data__plan-direction plan-direction">
+                <h3 class="visually-hidden">Направление программы</h3>
                 <ul class="plan-direction__list">
-                  <li class="plan-direction__item weight-loss">
-                    <input class="input-radio weight-loss__input" type="radio" name="plan-direction" id="plan-direction_weight-loss" value="weight-loss" checked>
-                    <label class="row-label weight-loss__label" for="plan-direction_weight-loss">Похудение</label>
+                  <li class="plan-direction__item">
+                    <input class="input-radio plan-direction__input" type="radio" name="plan-direction" id="plan-direction_weight-loss" value="weight-loss" checked>
+                    <label class="row-label plan-direction__label" for="plan-direction_weight-loss">Похудение</label>
                   </li>
-                  <li class="plan-direction__item weight-gain">
-                    <input class="input-radio weight-gain__input" type="radio" name="plan-direction" id="plan-direction_weight-gain" value="weight-gain">
-                    <label class="row-label weight-gain__label" for="plan-direction_weight-gain">Набор массы</label>
+                  <li class="plan-direction__item ">
+                    <input class="input-radio plan-direction__input" type="radio" name="plan-direction" id="plan-direction_weight-gain" value="weight-gain">
+                    <label class="row-label plan-direction__label" for="plan-direction_weight-gain">Набор массы</label>
                   </li>
-                  <li class="plan-direction__item needs-help">
-                    <input class="input-radio needs-help__input" type="radio" name="plan-direction" id="plan-direction_needs-help" value="needs-help">
-                    <label class="row-label needs-help__label" for="plan-direction_needs-help">Не знаю (Нужен ваш совет)</label>
+                  <li class="plan-direction__item">
+                    <input class="input-radio plan-direction__input" type="radio" name="plan-direction" id="plan-direction_needs-help" value="needs-help">
+                    <label class="row-label plan-direction__label" for="plan-direction_needs-help">Не знаю (Нужен ваш совет)</label>
                   </li>
                 </ul>
-              </fieldset>
+              </div>
             </div>
 
             <div class="select-plan__title-wrapper subheader">
@@ -109,19 +109,19 @@
               </div>
             </div>
 
-            <fieldset class="select-plan__host-contacts host-contacts">
-              <legend class="visually-hidden">Данные о владельце питомца</legend>
+            <div class="select-plan__host-contacts host-contacts">
+              <h3 class="visually-hidden">Данные о владельце питомца</legend>
               <ul class="host-contacts__list">
-                <li class="host-contacts__item host-email">
-                  <label class="row-label host-email__label" for="host-email_input">E-mail:*</label>
-                  <input class="input-text host-email__input" type="text" name="host-email" id="host-email_input" required>
+                <li class="host-contacts__item">
+                  <label class="row-label host-contacts__label" for="host-email_input">E-mail:*</label>
+                  <input class="input-text host-contacts__input" type="text" name="host-email" id="host-email_input" required>
                 </li>
-                <li class="host-contacts__item host-phone">
-                  <label class="row-label host-phone__label" for="host-phone_input">Телефон:*</label>
-                  <input class="input-text host-phone__input" type="text" name="host-phone" id="host-phone_input" required>
+                <li class="host-contacts__item">
+                  <label class="row-label host-contacts__label" for="host-phone_input">Телефон:*</label>
+                  <input class="input-text host-contacts__input" type="text" name="host-phone" id="host-phone_input" required>
                 </li>
               </ul>
-            </fieldset>
+            </div>
 
             <div class="select-plan__title-wrapper subheader">
               <div class="aligment-wrapper">
@@ -129,9 +129,10 @@
               </div>
             </div>
 
-            <fieldset class="select-plan__comments comments">
+            <div class="select-plan__comments comments">
+              <h3 class="visually-hidden">Комментарии к плану программы</h3>
               <textarea class="comments__textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
-            </fieldset>
+            </div>
 
             <div class="select-plan__title-wrapper subheader">
               <div class="aligment-wrapper">
@@ -139,34 +140,34 @@
               </div>
             </div>
 
-            <fieldset class="select-plan__additional-parameters additional-parameters">
-              <legend class="visually-hidden">Дополнительные параметры программы</legend>
+            <div class="select-plan__additional-parameters additional-parameters">
+              <h3 class="visually-hidden">Дополнительные параметры программы</h3>
               <ul class="additional-parameters__list">
-                <li class="additional-parameters__item sugar-substitute">
-                  <input class="input-checkbox sugar-substitute__input" type="checkbox" name="sugar-substitute" id="additional-parameters_sugar-substitute" value="sugar-substitute" checked>
-                  <label class="row-label sugar-substitute__label" for="additional-parameters_sugar-substitute">Сахарозаменитель</label>
+                <li class="additional-parameters__item">
+                  <input class="input-checkbox additional-parameters__input" type="checkbox" name="sugar-substitute" id="additional-parameters_sugar-substitute" value="sugar-substitute" checked>
+                  <label class="row-label additional-parameters__label" for="additional-parameters_sugar-substitute">Сахарозаменитель</label>
                 </li>
-                <li class="additional-parameters__item drinking-water">
-                  <input class="input-checkbox drinking-water__input" type="checkbox" name="drinking-water" id="additional-parameters_drinking-water" value="drinking-water">
-                  <label class="row-label drinking-water__label" for="additional-parameters_drinking-water">Питьевая вода</label>
+                <li class="additional-parameters__item">
+                  <input class="input-checkbox additional-parameters__input" type="checkbox" name="drinking-water" id="additional-parameters_drinking-water" value="drinking-water">
+                  <label class="row-label additional-parameters__label" for="additional-parameters_drinking-water">Питьевая вода</label>
                 </li>
-                <li class="additional-parameters__item milk">
-                  <input class="input-checkbox milk__input" type="checkbox" name="milk" id="additional-parameters_milk" value="milk">
-                  <label class="row-label milk__label" for="additional-parameters_milk">Молоко</label>
+                <li class="additional-parameters__item">
+                  <input class="input-checkbox additional-parameters__input" type="checkbox" name="milk" id="additional-parameters_milk" value="milk">
+                  <label class="row-label additional-parameters__label" for="additional-parameters_milk">Молоко</label>
                 </li>
-                <li class="additional-parameters__item vitamins">
-                  <input class="input-checkbox vitamins__input" type="checkbox" name="vitamins" id="additional-parameters_vitamins" value="vitamins">
-                  <label class="row-label vitamins__label" for="additional-parameters_vitamins">Витамины</label>
+                <li class="additional-parameters__item">
+                  <input class="input-checkbox additional-parameters__input" type="checkbox" name="vitamins" id="additional-parameters_vitamins" value="vitamins">
+                  <label class="row-label additional-parameters__label" for="additional-parameters_vitamins">Витамины</label>
                 </li>
               </ul>
+            </div>
 
-              <div class="select-plan__control">
-                <div class="select-plan__button">
-                  <button class="button button--green select-plan__send-data">Отправить заявку</button>
-                </div>
-                <p class="select-plan__footnote">* — Обязательные поля</p>
+            <div class="select-plan__control">
+              <div class="select-plan__button">
+                <button class="button button--green select-plan__send-data">Отправить заявку</button>
               </div>
-            </fieldset>
+              <p class="select-plan__footnote">* — Обязательные поля</p>
+            </div>
 
           </form>
         </section>
@@ -256,5 +257,6 @@
 
     </div>
     <script src="js/script.js"></script>
+    <script src="js/picturefill.min.js"></script>
   </body>
 </html>
