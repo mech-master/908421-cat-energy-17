@@ -1,0 +1,43 @@
+.pet-detail {
+  box-sizing: border-box;
+  padding: 0 20px 0 19px;
+}
+
+.pet-detail__list {
+  box-sizing: border-box;
+  padding: 0 0 8px 0;
+
+  list-style: none;
+}
+
+.pet-detail__item {
+  display: flex;
+
+  margin-bottom: 16px;
+}
+
+.pet-detail__label {
+  margin-right: 15px;
+  padding: 13px 0 11px 0;
+}
+
+@media (min-width: @tablet-width) {
+  .pet-detail {
+    padding: 0 68px 0 70px;
+  }
+
+  .pet-detail__label {
+    margin-right: 17px;
+    padding: 14px 0 12px 0;
+  }
+
+  .pet-detail__item {
+    margin-bottom: 22px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .pet-detail {
+    padding: 0;
+  }
+}

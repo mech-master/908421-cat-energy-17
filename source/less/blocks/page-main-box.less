@@ -21,6 +21,10 @@
   font-size: 36px;
   line-height: 1.67;
   color: #111111;
+
+  &--form {
+    margin-bottom: 26px;
+  }
 }
 
 .page-main-box__product-catalog {
@@ -36,8 +40,14 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-main-box--catalog {
-    padding: 58px 0 0 0;
+  .page-main-box {
+    &--catalog {
+      padding: 58px 0 0 0;
+    }
+
+    &--form {
+      padding: 58px 0 0 0;
+    }
   }
 
   .page-main-box__catalog-sections {
@@ -49,6 +59,10 @@
 
     font-size: 60px;
     line-height: 1;
+
+    &--form {
+      margin-bottom: 55px;
+    }
   }
 
   .page-main-box__advantages {
@@ -90,6 +104,10 @@
       background-color: #6bae42;
 
       content: "";
+    }
+
+    &--form {
+      padding: 74px 0 0 0;
     }
   }
 
