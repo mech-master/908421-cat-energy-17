@@ -1,11 +1,8 @@
-.plan-direction {
-  box-sizing: border-box;
-  padding: 0 20px 0 19px;
-}
-
 .plan-direction__list {
   box-sizing: border-box;
-  padding: 27px 0 1px 0;
+  width: @mobile-width;
+  margin: 0 auto;
+  padding: 27px 20px 1px 19px;
 
   list-style: none;
 }
@@ -61,11 +58,14 @@
 
 @media (min-width: @tablet-width) {
   .plan-direction {
+    box-sizing: border-box;
     padding: 0 67px 0 71px;
   }
 
   .plan-direction__list {
     box-sizing: border-box;
+    width: @tablet-width;
+    margin: 0 auto;
     padding: 33px 33px 2px 33px;
 
     border: 1px solid rgba(205, 205, 205, 0.5);

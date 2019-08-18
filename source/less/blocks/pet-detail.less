@@ -1,11 +1,8 @@
-.pet-detail {
-  box-sizing: border-box;
-  padding: 0 20px 0 19px;
-}
-
 .pet-detail__list {
+  width: @mobile-width;
+  margin: 0 auto;
   box-sizing: border-box;
-  padding: 0 0 8px 0;
+  padding: 0 20px 8px 19px;
 
   list-style: none;
 }
@@ -31,6 +28,15 @@
     padding: 14px 0 12px 0;
   }
 
+  .pet-detail__list {
+    width: @tablet-width;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 70px 8px 70px;
+
+    list-style: none;
+  }
+
   .pet-detail__item {
     margin-bottom: 22px;
   }
@@ -39,5 +45,10 @@
 @media (min-width: @desktop-width) {
   .pet-detail {
     padding: 0;
+  }
+
+  .pet-detail__list {
+    width: 100%;
+    padding: 0 ;
   }
 }

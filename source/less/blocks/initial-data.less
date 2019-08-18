@@ -4,13 +4,19 @@
 }
 
 .initial-data__plan-direction {
-  margin-bottom: 27px;
+  width: @mobile-width;
+  margin: 0 auto 27px auto;
 }
 
 @media (min-width: @tablet-width) {
   .initial-data__pet-detail,
   .initial-data__plan-direction {
     border: none;
+  }
+
+  .initial-data__plan-direction {
+    width: @tablet-width;
+    margin: 0 auto 27px auto;
   }
 
   .initial-data__pet-detail {

@@ -27,6 +27,13 @@
   &:invalid {
     outline: 2px solid #ff8282;
   }
+
+  &::-ms-clear,
+  &::-ms-reveal {
+    display: none;
+    width : 0;
+    height: 0;
+  }
 }
 
 @media (min-width: @tablet-width) {
