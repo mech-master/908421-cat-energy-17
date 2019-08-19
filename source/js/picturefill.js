@@ -1438,7 +1438,6 @@
         picturefill = noop;
         pf.fillImg = noop;
     } else {
-
          // Set up picture polyfill by polling the document
         (function() {
             var isDomReady;
