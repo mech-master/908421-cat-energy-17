@@ -3,7 +3,6 @@
   flex-direction: column;
 
   box-sizing: border-box;
-  width: @mobile-width;
   padding: 27px 0 0 0;
 
   background-image: url("../img/index-background-mobile@1x.jpg");
@@ -62,7 +61,6 @@
     align-items: flex-start;
     position: relative;
 
-    width: @tablet-width;
     padding: 59px 0 0 0;
 
     background-image: none;
@@ -70,7 +68,10 @@
 
   .program-select__title {
     order: 1;
-    margin: 0 117px 41px 117px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 117px 41px 117px;
 
     font-weight: normal;
     font-size: 60px;
@@ -96,6 +97,9 @@
   }
 
   .program-select__image {
+    display: block;
+
+    margin: 0;
     width: 709px;
     height: 609px;
   }

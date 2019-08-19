@@ -21,10 +21,16 @@
   font-size: 36px;
   line-height: 1.67;
   color: #111111;
+
+  &--form {
+    margin-bottom: 26px;
+  }
 }
 
-.page-main-box__basic-catalog {
+.page-main-box__product-catalog {
   width: auto;
+
+  margin: 0 0 35px 0;
 }
 
 .page-main-box__live-example {
@@ -34,8 +40,14 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-main-box--catalog {
-    padding: 58px 0 0 0;
+  .page-main-box {
+    &--catalog {
+      padding: 58px 0 0 0;
+    }
+
+    &--form {
+      padding: 58px 0 0 0;
+    }
   }
 
   .page-main-box__catalog-sections {
@@ -47,10 +59,18 @@
 
     font-size: 60px;
     line-height: 1;
+
+    &--form {
+      margin-bottom: 55px;
+    }
   }
 
   .page-main-box__advantages {
     border-bottom: 1px solid #444444;
+  }
+
+  .page-main-box__product-catalog {
+    margin: 0 0 76px 0;
   }
 
   .page-main-box__live-example {
@@ -85,6 +105,10 @@
 
       content: "";
     }
+
+    &--form {
+      padding: 74px 0 0 0;
+    }
   }
 
   .page-main-box--catalog {
@@ -95,7 +119,19 @@
     padding: 0 40px 0 40px;
   }
 
+  .page-main-box__advantages {
+    border-bottom: none;
+  }
+
+  .page-main-box__live-example {
+    background-image: linear-gradient(to top, #f2f2f2 462px, transparent 462px);
+  }
+
   .page-main-box__catalog-sections {
     margin: 0 auto 74px auto;
+  }
+
+  .page-main-box__product-catalog {
+    margin: 0 0 86px 0;
   }
 }

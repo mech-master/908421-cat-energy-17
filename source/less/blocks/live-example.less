@@ -46,7 +46,9 @@
   }
 
   .live-example__information {
+    margin: 0 0 24px 0;
     padding: 0 60px 0 30px;
+
     font-size: 16px;
     line-height: 1.5;
   }
@@ -54,6 +56,33 @@
 
 @media (min-width: @desktop-width) {
   .live-example {
-    height: 1061px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 1300px;
+    margin: 0 auto;
+    padding: 0 0 0 0;
+  }
+
+  .live-example__wrapper {
+    width: 475px;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 45px 0 0 40px;
+  }
+
+  .live-example__title {
+    margin: 0 0 126px 0;
+    padding: 0;
+  }
+
+  .live-example__information {
+    margin: 0 0 68px 0;
+    padding: 0 0 0 0;
+  }
+
+  .live-example__statistic {
+    padding: 0 0 0 0;
   }
 }

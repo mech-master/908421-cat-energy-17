@@ -1,8 +1,14 @@
-var js_navigationButton__unavailable = document.querySelector(".js-navigation-button--unavailable");
-js_navigationButton__unavailable.classList.remove("js-navigation-button--unavailable");
+var js_navigationButton__unavailable = document.querySelector(".page-header__navigation-button--nojs");
+js_navigationButton__unavailable.classList.remove("page-header__navigation-button--nojs");
 
-var js_mainNavigation__unavailable = document.querySelector(".js-main-navigation--unavailable");
-js_mainNavigation__unavailable.classList.remove("js-main-navigation--unavailable");
+var js_mainNavigation__unavailable = document.querySelector(".page-header__navigation--nojs");
+js_mainNavigation__unavailable.classList.remove("page-header__navigation--nojs");/**/
+
+/*var js_elements__unavailable = document.querySelectorAll(".js-unavailable");
+console.log(js_elements__unavailable);
+for (var i=0; i<js_elements__unavailable.length; i++) {
+  js_elements__unavailable[i].classList.remove("js-unavailable");
+};/**/
 
 var pageHeader__navigationButton = document.querySelector(".page-header__navigation-button");
 var pageHeader__navigation = document.querySelector(".page-header__navigation");

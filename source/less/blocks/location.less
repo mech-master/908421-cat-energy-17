@@ -47,6 +47,8 @@
   width: 100%;
   height: 100%;
   border: none;
+
+  background-color: transparent;
 }
 
 @media (min-width: @tablet-width) {
@@ -68,6 +70,27 @@
 
   .location__static-map {
     width: 767px;
+    height: 400px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .location {
+    height: 400px;
+  }
+
+  .location__static-wrapper {
+    width: 1440px;
+
+    &::after {
+      bottom: 144px;
+      left: auto;
+      right: 318px;
+    }
+  }
+
+  .location__static-map {
+    width: 1440px;
     height: 400px;
   }
 }

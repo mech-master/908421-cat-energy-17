@@ -21,7 +21,7 @@
   justify-content: center;
   align-items: center;
 
-  padding: 0 20px 0 20px;
+  padding: 11px 20px 15px 20px;
   box-sizing: border-box;
 
   &:hover {
@@ -40,8 +40,20 @@
   height: 39px;
 }
 
-.page-header__navigation--hidden {
-  display: none;
+.page-header__navigation {
+  &--hidden {
+    display: none;
+  }
+
+  &--nojs {
+    display: block;
+  }
+}
+
+.page-header__navigation-button {
+  &--nojs {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
