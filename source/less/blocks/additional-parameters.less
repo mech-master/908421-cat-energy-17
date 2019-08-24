@@ -46,6 +46,23 @@
 
     content: "";
   }
+
+  &:hover {
+    color: #222222;
+
+    &::before {
+      border: 1px solid #bababa;
+    }
+  }
+
+  &:active {
+    color: rgba(34, 34, 34, 0.3);
+
+    &::before,
+    &::after {
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
