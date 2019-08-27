@@ -81,7 +81,19 @@
   .page-main-box {
     position: relative;
 
-    &--index::after {
+    &--form {
+      padding: 74px 0 0 0;
+    }
+
+    &--catalog {
+      padding: 74px 0 0 0;
+    }
+  }
+
+  .page-main-box__background-index {
+    position: relative;
+
+    &::after {
       display: block;
       position: absolute;
       top: -114px;
@@ -104,14 +116,6 @@
 
       content: "";
     }
-
-    &--form {
-      padding: 74px 0 0 0;
-    }
-  }
-
-  .page-main-box--catalog {
-    padding: 74px 0 0 0;
   }
 
   .page-main-box__title {
