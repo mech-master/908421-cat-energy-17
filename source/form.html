@@ -5,6 +5,9 @@
     <title>Выбор программы Кэт энерджи</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="preload" href="/css/style.min.css" as="style">
+    <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="/fonts/oswaldregular.woff2" as="font">
   </head>
   <body>
 
@@ -54,15 +57,15 @@
                 <ul class="pet-detail__list">
                   <li class="pet-detail__item">
                     <label class="row-label pet-detail__label" for="pet-name_input">Имя:*</label>
-                    <input class="input-text pet-detail__input" type="text" name="pet-name" id="pet-name_input" required value="Барсик">
+                    <input class="input-text pet-detail__input" type="text" name="pet-name" id="pet-name_input" required value="Барсик" aria-label="Введите кличку питомца">
                   </li>
                   <li class="pet-detail__item">
-                    <label class="row-label pet-detail__label" for="pet-weight_input">Вес (кг):*&nbsp;</label>
-                    <input class="input-text pet-detail__input" type="text" name="pet-weight" id="pet-weight_input" required value="7">
+                    <label class="row-label pet-detail__label" for="pet-weight_input">Вес (кг):*</label>
+                    <input class="input-text pet-detail__input" type="text" name="pet-weight" id="pet-weight_input" required value="7"  aria-label="Введите вес питомца">
                   </li>
                   <li class="pet-detail__item">
-                    <label class="row-label pet-detail__label" for="pet-age_input">Возраст (лет):&nbsp;</label>
-                    <input class="input-text pet-detail__input" type="text" name="pet-age" id="pet-age_input" value="7">
+                    <label class="row-label pet-detail__label" for="pet-age_input">Возраст (лет):</label>
+                    <input class="input-text pet-detail__input" type="text" name="pet-age" id="pet-age_input" value="7"  aria-label="Введите возраст питомца">
                   </li>
                 </ul>
               </div>
@@ -72,15 +75,15 @@
                 <ul class="plan-direction__list">
                   <li class="plan-direction__item">
                     <input class="input-radio plan-direction__input" type="radio" name="plan-direction" id="plan-direction_weight-loss" value="weight-loss" checked>
-                    <label class="row-label plan-direction__label" for="plan-direction_weight-loss">Похудение</label>
+                    <label class="row-label plan-direction__label" for="plan-direction_weight-loss"  aria-label="Программа на похудение">Похудение</label>
                   </li>
                   <li class="plan-direction__item ">
                     <input class="input-radio plan-direction__input" type="radio" name="plan-direction" id="plan-direction_weight-gain" value="weight-gain">
-                    <label class="row-label plan-direction__label" for="plan-direction_weight-gain">Набор массы</label>
+                    <label class="row-label plan-direction__label" for="plan-direction_weight-gain" aria-label="Программа на набор массы">Набор массы</label>
                   </li>
                   <li class="plan-direction__item">
                     <input class="input-radio plan-direction__input" type="radio" name="plan-direction" id="plan-direction_needs-help" value="needs-help">
-                    <label class="row-label plan-direction__label" for="plan-direction_needs-help">Не знаю (Нужен ваш совет)</label>
+                    <label class="row-label plan-direction__label" for="plan-direction_needs-help" aria-label="Помощь в выборе программы">Не знаю (Нужен ваш совет)</label>
                   </li>
                 </ul>
               </div>
@@ -97,14 +100,14 @@
               <ul class="host-contacts__list">
                 <li class="host-contacts__item">
                   <label class="row-label host-contacts__label" for="host-email_input">E-mail:* </label>
-                  <input class="host-contacts__input input-text" type="text" name="host-email" id="host-email_input" required value="kuklachev@gmail.com">
+                  <input class="host-contacts__input input-text" type="email" name="host-email" id="host-email_input" required value="kuklachev@gmail.com" aria-label="Имя владельца питомца">
                   <svg aria-hidden="true" role="presentation" class="host-contacts__icon host-contacts__icon--mail" width="17" height="13">
                     <use xlink:href="#icon-mail"></use>
                   </svg>
                 </li>
                 <li class="host-contacts__item">
                   <label class="row-label host-contacts__label" for="host-phone_input">Телефон:*</label>
-                  <input class="host-contacts__input input-text" type="text" name="host-phone" id="host-phone_input" required value="8 (960) 900-60-90">
+                  <input class="host-contacts__input input-text" type="tel" name="host-phone" id="host-phone_input" required value="8 (960) 900-60-90" aria-label="Контактный номер телефона владельца питомца">
                   <svg aria-hidden="true" role="presentation" class="host-contacts__icon host-contacts__icon--phone" width="20" height="20">
                     <use xlink:href="#icon-phone"></use>
                   </svg>
@@ -121,7 +124,7 @@
             <div class="select-plan__comments comments">
               <div class="comments__wrapper aligment-wrapper">
                 <h3 class="visually-hidden">Комментарии к плану программы</h3>
-                <textarea class="comments__textarea" rows="8" placeholder="Расскажите обо всех повадках кота"></textarea>
+                <textarea class="comments__textarea" rows="8" placeholder="Расскажите обо всех повадках кота" aria-label="Дополнительная информация к выбору программы"></textarea>
               </div>
             </div>
 
@@ -136,19 +139,19 @@
               <ul class="additional-parameters__list aligment-wrapper">
                 <li class="additional-parameters__item">
                   <input class="input-checkbox additional-parameters__input" type="checkbox" name="sugar-substitute" id="additional-parameters_sugar-substitute" value="sugar-substitute" checked>
-                  <label class="row-label additional-parameters__label" for="additional-parameters_sugar-substitute">Сахарозаменитель</label>
+                  <label class="row-label additional-parameters__label" for="additional-parameters_sugar-substitute" aria-label="Дополнительный параметр программы: отказ от сахаросодержащих продуктов">Сахарозаменитель</label>
                 </li>
                 <li class="additional-parameters__item">
                   <input class="input-checkbox additional-parameters__input" type="checkbox" name="drinking-water" id="additional-parameters_drinking-water" value="drinking-water">
-                  <label class="row-label additional-parameters__label" for="additional-parameters_drinking-water">Питьевая вода</label>
+                  <label class="row-label additional-parameters__label" for="additional-parameters_drinking-water" aria-label="Дополнительный параметр программы: чистая вода">Питьевая вода</label>
                 </li>
                 <li class="additional-parameters__item">
                   <input class="input-checkbox additional-parameters__input" type="checkbox" name="milk" id="additional-parameters_milk" value="milk">
-                  <label class="row-label additional-parameters__label" for="additional-parameters_milk">Молоко</label>
+                  <label class="row-label additional-parameters__label" for="additional-parameters_milk" aria-label="Дополнительный параметр программы: добавление в рацион молока">Молоко</label>
                 </li>
                 <li class="additional-parameters__item">
                   <input class="input-checkbox additional-parameters__input" type="checkbox" name="vitamins" id="additional-parameters_vitamins" value="vitamins">
-                  <label class="row-label additional-parameters__label" for="additional-parameters_vitamins">Витамины</label>
+                  <label class="row-label additional-parameters__label" for="additional-parameters_vitamins" aria-label="Дополнительный параметр программы: добавление в рацион витаминов">Витамины</label>
                 </li>
               </ul>
             </div>

@@ -11,6 +11,19 @@
   display: flex;
 
   margin-bottom: 16px;
+
+  &:nth-child(2) {
+    & .pet-detail__label {
+      margin-right: 19px;
+    }
+  }
+
+  &:nth-child(3) {
+    & .pet-detail__label {
+      margin-right: 17px;
+      white-space: nowrap;
+    }
+  }
 }
 
 .pet-detail__label {
@@ -20,7 +33,7 @@
 
 @media (min-width: @tablet-width) {
   .pet-detail__label {
-    margin-right: 17px;
+    margin-right: 18px;
     padding: 14px 0 12px 0;
   }
 
@@ -28,13 +41,26 @@
     width: @tablet-width;
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 0 70px 8px 70px;
+    padding: 0 68px 8px 71px;
 
     list-style: none;
   }
 
   .pet-detail__item {
     margin-bottom: 22px;
+
+    &:nth-child(2) {
+      & .pet-detail__label {
+        margin-right: 21px;
+      }
+    }
+
+    &:nth-child(3) {
+      & .pet-detail__label {
+        margin-right: 19px;
+        white-space: nowrap;
+      }
+    }
   }
 }
 
